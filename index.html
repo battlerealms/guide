@@ -5,6 +5,7 @@
     <style>
       body {
         background-image: url('https://i.imgur.com/T6e3IkL.png');
+        background-size: cover; /* Ensure the background covers the entire viewport */
         background-position: center;
 	cursor: url(https://i.imgur.com/R1LDYnL.png), auto;
         background-repeat: no-repeat;
@@ -13,11 +14,15 @@
         font-family: 'Philosopher', sans-serif;
         text-align: center;
         text-shadow: 0 0 10px orange; /* Adding orange glow effect */
+        height: 100vh; /* Set the body height to fill the viewport */
+        margin: 0; /* Remove default margin */
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       p {
         font-size: 36px; /* Adjust the font size as needed */
-        margin-top: 40%; /* Centering vertically */
       }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
