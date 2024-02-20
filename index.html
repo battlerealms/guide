@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="7; url='https://battlerealms.github.io/miniguide'" />
+    <meta http-equiv="refresh" content="10; url='https://battlerealms.github.io/miniguide'" />
     <style>
       body {
         background-image: url('https://i.imgur.com/T6e3IkL.png');
@@ -27,10 +27,13 @@
         margin-bottom: 20px; /* Add some space between the paragraph and the Discord logo */
       }
 
+      .discord-logo-container {
+        position: relative; /* Required for tooltip positioning */
+      }
+
       .discord-logo {
         width: 75px; /* Double the original size by 50% */
         height: 75px; /* Double the original size by 50% */
-        margin-top: 20px; /* Add some space above the Discord logo */
         cursor: pointer; /* Change cursor to indicate it's clickable */
         opacity: 0.5; /* Set initial transparency */
         transition: opacity 0.3s; /* Smooth transition for opacity change */
@@ -41,29 +44,32 @@
       }
 
       .discord-tooltip {
-        position: relative;
-        display: inline-block;
-      }
-
-      .discord-tooltip .tooltiptext {
-        visibility: hidden;
+        position: absolute; /* Position the tooltip absolutely */
+        bottom: -70px; /* Adjust this value to control the distance between the logo and the tooltip */
+        left: 50%;
+        transform: translateX(-50%); /* Center the tooltip horizontally */
         width: 160px;
         background-color: black;
         color: orange;
         text-align: center;
         border-radius: 6px;
         padding: 5px;
-        position: absolute;
-        z-index: 1;
-        bottom: 125%;
-        left: 50%;
-        margin-left: -80px;
         opacity: 0;
         transition: opacity 0.3s;
+        border: 2px solid orange; /* Add orange border */
+        box-shadow: 0 0 10px orange; /* Add glowing effect */
       }
 
-      .discord-tooltip:hover .tooltiptext {
-        visibility: visible;
+      .discord-tooltip .arrow {
+        position: absolute;
+        top: -10px; /* Adjust the position of the arrow */
+        left: calc(50% - 10px); /* Position the arrow in the center */
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid orange; /* Set arrow color to orange */
+      }
+
+      .discord-logo-container:hover .discord-tooltip {
         opacity: 1;
       }
     </style>
@@ -71,9 +77,12 @@
   </head>
   <body>
     <p>Main guide is unavailable for now. You will be redirected to the updated mini version soon!</p>
-    <div class="discord-tooltip">
+    <div class="discord-logo-container">
       <a href="https://discord.gg/battlerealms" target="_blank"><img class="discord-logo" src="https://i.imgur.com/pK4OMio.png" alt="Discord Logo"></a>
-      <span class="tooltiptext">Official Battle Realms Discord Server</span>
+      <div class="discord-tooltip">
+        <div class="arrow"></div> <!-- Arrow for tooltip -->
+        Official Battle Realms Discord Server
+      </div>
     </div>
   </body>
 </html>
