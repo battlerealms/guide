@@ -1,88 +1,115 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="refresh" content="10; url='https://battlerealms.github.io/miniguide'" />
-    <style>
-      body {
-        background-image: url('https://i.imgur.com/T6e3IkL.png');
-        background-size: cover;
-        background-position: center;
-        cursor: url(https://i.imgur.com/R1LDYnL.png), auto;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        color: orange;
-        font-family: 'Philosopher', sans-serif;
-        text-align: center;
-        text-shadow: 0 0 10px orange;
-        height: 100vh;
-        margin: 0;
-        display: flex;
-        flex-direction: column; /* Stack content vertically */
-        justify-content: center;
-        align-items: center;
-      }
+<head>
+  <meta http-equiv="refresh" content="10; url='https://battlerealms.github.io/miniguide'" />
+  <style>
+    body {
+      background-image: url('https://i.imgur.com/T6e3IkL.png');
+      background-size: cover;
+      background-position: center;
+      cursor: url(https://i.imgur.com/R1LDYnL.png), auto;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: orange;
+      font-family: 'Philosopher', sans-serif;
+      text-align: center;
+      text-shadow: 0 0 10px orange;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column; /* Stack content vertically */
+      justify-content: center;
+      align-items: center;
+    }
 
-      p {
-        font-size: 36px;
-        margin-bottom: 20px; /* Add some space between the paragraph and the Discord logo */
-      }
+    p {
+      font-size: 36px;
+      margin-bottom: 20px; /* Add some space between the paragraph and the Discord logo */
+    }
 
-      .discord-logo-container {
-        position: relative; /* Required for tooltip positioning */
-      }
+    .discord-logo-container {
+      position: relative; /* Required for tooltip positioning */
+    }
 
-      .discord-logo {
-        width: 75px; /* Double the original size by 50% */
-        height: 75px; /* Double the original size by 50% */
-        cursor: pointer; /* Change cursor to indicate it's clickable */
-        opacity: 0.5; /* Set initial transparency */
-        transition: opacity 0.3s; /* Smooth transition for opacity change */
-      }
+    .discord-logo {
+      width: 75px; /* Double the original size by 50% */
+      height: 75px; /* Double the original size by 50% */
+      cursor: pointer; /* Change cursor to indicate it's clickable */
+      opacity: 0.5; /* Set initial transparency */
+      transition: opacity 0.3s; /* Smooth transition for opacity change */
+    }
 
-      .discord-logo:hover {
-        opacity: 1; /* Set opacity to 100% when hovered over */
-      }
+    .discord-logo:hover {
+      opacity: 1; /* Set opacity to 100% when hovered over */
+    }
 
-      .discord-tooltip {
-        position: absolute; /* Position the tooltip absolutely */
-        bottom: -70px; /* Adjust this value to control the distance between the logo and the tooltip */
-        left: 50%;
-        transform: translateX(-50%); /* Center the tooltip horizontally */
-        width: 160px;
-        background-color: black;
-        color: orange;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px;
-        opacity: 0;
-        transition: opacity 0.3s;
-        border: 2px solid orange; /* Add orange border */
-        box-shadow: 0 0 10px orange; /* Add glowing effect */
-      }
+    .discord-tooltip {
+      position: absolute; /* Position the tooltip absolutely */
+      bottom: -70px; /* Adjust this value to control the distance between the logo and the tooltip */
+      left: 50%;
+      transform: translateX(-50%); /* Center the tooltip horizontally */
+      width: 160px;
+      background-color: black;
+      color: orange;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px;
+      opacity: 0;
+      transition: opacity 0.3s;
+      border: 2px solid orange; /* Add orange border */
+      box-shadow: 0 0 10px orange; /* Add glowing effect */
+    }
 
-      .discord-tooltip .arrow {
-        position: absolute;
-        top: -10px; /* Adjust the position of the arrow */
-        left: calc(50% - 10px); /* Position the arrow in the center */
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-bottom: 10px solid orange; /* Set arrow color to orange */
-      }
+    .discord-tooltip .arrow {
+      position: absolute;
+      top: -10px; /* Adjust the position of the arrow */
+      left: calc(50% - 10px); /* Position the arrow in the center */
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid orange; /* Set arrow color to orange */
+    }
 
-      .discord-logo-container:hover .discord-tooltip {
-        opacity: 1;
+    .discord-logo-container:hover .discord-tooltip {
+      opacity: 1;
+    }
+
+    /* Circle animation */
+    @keyframes circle {
+      0% {
+        transform: scale(0); /* Initial size of the circle */
+        opacity: 1; /* Initial opacity */
       }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <p>Main guide is unavailable for now. You will be redirected to the updated mini version soon!</p>
-    <div class="discord-logo-container">
-      <a href="https://discord.gg/battlerealms" target="_blank"><img class="discord-logo" src="https://i.imgur.com/pK4OMio.png" alt="Discord Logo"></a>
-      <div class="discord-tooltip">
-        <div class="arrow"></div> <!-- Arrow for tooltip -->
-        Official Battle Realms Discord Server
-      </div>
+      100% {
+        transform: scale(1); /* Final size of the circle */
+        opacity: 0; /* Fade out */
+      }
+    }
+
+    .circle-animation {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: orange;
+      animation: circle 1s ease-in-out infinite; /* Apply the animation */
+      margin: 0 10px; /* Add margin between circles */
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Circle animations -->
+  <div style="display: flex; align-items: center;">
+    <div class="circle-animation"></div>
+    <div class="circle-animation"></div>
+    <div class="circle-animation"></div>
+  </div>
+  <p>Main guide is unavailable for now. You will be redirected to the updated mini version soon!</p>
+  <div class="discord-logo-container">
+    <a href="https://discord.gg/battlerealms" target="_blank"><img class="discord-logo" src="https://i.imgur.com/pK4OMio.png" alt="Discord Logo"></a>
+    <div class="discord-tooltip">
+      <div class="arrow"></div> <!-- Arrow for tooltip -->
+      Official Battle Realms Discord Server
     </div>
-  </body>
+  </div>
+</body>
 </html>
