@@ -37,8 +37,6 @@ Feel free to fork and modify it for your own references as long as you credit th
 
 This guide was last updated for Battle Realms: Zen Edition v1.59.1 (pre-Full Release) and is no longer actively maintained as I've stepped away from Battle Realms and its community.
 
-This remains the official GitHub repository under Ed Del Castillo's ownership, feel free to continue this work under the licensing terms above - just as I continued alecThunder's 2002 table for BR:WOTW.
+Feel free to continue this work under the licensing terms above - just as I continued alecThunder's 2002 table for BR:WOTW.
 
 ---
-
-**Enjoy exploring the world of Battle Realms!**
