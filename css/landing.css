@@ -1,0 +1,108 @@
+/* 
+   landing.css
+*/
+
+/* Reset and Overall Styling */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Philosopher', sans-serif;
+  text-align: center;
+  color: #fff;
+
+  /* Background with fixed attachment */
+  background: url("https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1025600/37762b35001bd84b80f64f7ab4699eda3d9204eb.jpg")
+             center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; /* for stacking context */
+}
+
+/* Flex Container to “stick” the footer to bottom if content is short */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* spans full viewport height */
+}
+
+/* The main content takes up the remaining space, pushing footer down */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Container for the two logos */
+.logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Logo styling */
+.logo img {
+  width: 200px;          
+  max-width: 80vw;       /* For smaller screens */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Enlarge the logo on hover */
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+/* Horizontal rule styling */
+hr {
+  width: 80%;
+  margin: 20px auto;
+  border: none;
+  border-top: 2px solid #b20000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Hover text area */
+#hover-text {
+  min-height: 60px;
+  margin-top: 20px;
+  font-size: 22px;
+  color: #D3D3D3;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  max-width: 80%;
+}
+
+/* Footer styling */
+.fixed-footer {
+  /* No position:fixed here; it sits at bottom due to flex layout */
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  color: #FFBF00;
+  text-align: center;
+  font-size: 14px;
+  backdrop-filter: blur(2px);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Responsive layout for mobile screens */
+@media (max-width: 600px) {
+  .logo-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .logo img {
+    width: 150px;  /* smaller on very narrow screens */
+  }
+  
+  .fixed-footer {
+    font-size: 12px;
+  }
+}
