@@ -24,13 +24,14 @@ A comprehensive reference for Battle Realms (Original & Zen Edition) covering un
 - **Zen Edition (Steam)**: Remaster of the game by Ed Del Castillo & The Battle Realms Team (which I used to be a part of until 2025).
 
 ## License
-Feel free to fork and modify it for your own references as long as you credit the author **KoMiKoZa** and any original contributors. Consider this content licensed under [Creative Commons CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+Feel free to fork and modify it for your own references, but plesae - credit the author **KoMiKoZa** and any original contributors. Consider this content licensed under [Creative Commons CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
 ## Current Status & Ownership
 
-This guide was last updated for Battle Realms: Zen Edition v1.59.1 (pre-Full Release) and is no longer actively maintained as I've stepped away from Battle Realms and its community.
+This guide was last updated for Battle Realms: Zen Edition v1.59.2 and is no longer actively maintained as I've stepped away from Battle Realms development.
 
 Feel free to continue this work under the licensing terms above - just as I continued alecThunder's 2002 table for BR:WOTW.
 
 ---
+
 
