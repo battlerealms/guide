@@ -2,12 +2,10 @@
 
 A comprehensive reference for Battle Realms (Original & Zen Edition) covering unit stats, mechanics, abilities, and clan-specific features for Dragon, Serpent, Wolf, and Lotus clans.
 
-## Features
+## Overview
 - **Full Unit Tables**: Detailed breakdowns (health, damage types, abilities, upgrades).
 - **Mechanics**: Summaries of resource gathering, building flammability, siege vs. non-siege, environmental effects, etc.
 - **Special Abilities**: Unique BGs (Battle Gears) and Innate Abilities for each unit, typed by clan.
-- **Schema Markup**: Rich JSON-LD for search engines describing the “Battle Realms” video game.
-- **SEO Friendly**: Open Graph, Twitter Cards, and meta descriptions included.
 
 ## Repository Structure
 - **`index.html`**  
@@ -17,14 +15,9 @@ A comprehensive reference for Battle Realms (Original & Zen Edition) covering un
 - **`js/`**  
   JavaScript for hover logic, transitions, tooltips, and any dynamic interactions.  
 
-## Usage
-1. **Clone/Download** this repository.  
-2. **Open** `index.html` in your browser—or host via GitHub Pages so it’s accessible under `https://<username>.github.io/<repo>/`.  
-3. **Browse** the entire guide, including expansions, mechanics, and clan breakdowns.
-
 ## Credits & Thanks
-- **Original Table**: Created by *alecThunder* and **the-barracks.com** (archived).  
-- **Updated/Redesigned**: by **KoMiKoZa** for the Battle Realms Community.  
+- **Original Table (concept)**: Created by *alecThunder* and **the-barracks.com** (archived).  
+- **Updated/Redesigned**: by **KoMiKoZa** for the Battle Realms Community worldwide.  
 - **Background Elements**: Artwork courtesy of [Fabian Rosskopf](https://www.artstation.com/faro).  
 - **Flag Icons**: by [Vincent Schwidder](https://www.iconfinder.com/yummygum).  
 - **Battle Realms + Winter of the Wolf**: The original game developed by Ed Del Castillo and Liquid Entertainment.
@@ -40,3 +33,4 @@ This guide was last updated for Battle Realms: Zen Edition v1.59.1 (pre-Full Rel
 Feel free to continue this work under the licensing terms above - just as I continued alecThunder's 2002 table for BR:WOTW.
 
 ---
+
